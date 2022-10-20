@@ -1,6 +1,6 @@
 import csv
 
-# Open file adn read using csv library
+# Open file and read using csv library
 with open ('panda_data/survey_results_public.csv') as f:
     csv_reader = csv.DictReader(f)
 
@@ -22,6 +22,7 @@ yes_pct = round(yes_pct, 2)
 
 no_pct = (no_count / total) * 100
 no_pct = round(no_pct, 2)
+
 # Print results
 print(f'Yes: {yes_pct}%')
 print(f'No: {no_pct}%')
